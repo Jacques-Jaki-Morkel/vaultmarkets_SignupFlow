@@ -66,7 +66,7 @@ ol li::marker {
     max-width: 1920px;
     display: flex;
     flex-direction: column;
-    align-items: Start;
+    align-items: center;
     justify-content: space-between;
     padding: 15px;
     height: 250px;

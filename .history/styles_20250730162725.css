@@ -1,0 +1,94 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #c89006;
+    --secondary-color: #6c757d;
+    --background-color: #292929;
+    --text-color: #f8f9fa;
+    --link-color: #007bff;
+}
+
+.container-size {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: var(--background-color);
+}
+h1, h2, h3, p,label {
+    color: var(--text-color);
+}
+
+/* start of sigh up flow styling here */
+
+/* page #1 in sign up flow */
+.openAccount-1
+
+/* Signup open account start */
+    {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* Signup open account end */
+
+/* Progress bar styling here */
+.progress-bar-wrapper
+
+/* progress bar */
+    {
+    margin-bottom: 50px;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 150px;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+
+}
+
+.progress-steps {
+    gap: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.progress-steps li {
+    width: 150px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-steps li p {
+    text-align: center;
+}
+
+/* page #2 in sign up flow */
+.personal-2
+
+/* Signup personal details */
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}

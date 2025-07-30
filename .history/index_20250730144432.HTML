@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault Markets - SignUP flow
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Open account Section -  page 1  -->
+    <section class="container-size openAccount-1">
+        <div class="col-1">
+            <h1>Open an account with Scope Markets</h1>
+            <p>Join thousands of traders who trust Scope Markets for their trading needs.</p>
+            <h2>Why trade with Scope Markets:</h2>
+            <p>Here is why thousands of customers choose to trade with Scope Markets:</p>
+            <ul>
+                <li>Scope Invest account</li>
+                <li>Competitive trading conditions</li>
+                <li>Advanced trading platforms</li>
+                <li>Fast and convenient transactions</li>
+                <li>Excellent multilingual customer support</li>
+                <li>Authorized and regulated by the FSCA</li>
+            </ul>
+        </div>
+
+        <div class="col-2">
+            <h2>Open an account</h2>
+            <p>Already have an account? <a href="#">Login here</a></p>
+
+            <form action="#" method="POST">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div>
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the <a href="#">Privacy Policy</a>.</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <label for="marketing">I agree to receive marketing and promotional communications</label>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Personal details Section -  page 1  -->
+    <section class="container-size personal-2">
+        <!-- Row 1: Progress Bar -->
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+                <ol class="progress-steps">
+                    <li>
+                        <div>1</div>
+                        <p>Personal details</p>
+                    </li>
+                    <li>
+                        <div>2</div>
+                        <p>Financial information</p>
+                    </li>
+                    <li>
+                        <div>3</div>
+                        <p>Knowledge and experience</p>
+                    </li>
+                    <li>
+                        <div>4</div>
+                        <p>Verification</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Row 2: Form -->
+        <div>
+            <h2>Personal Details</h2>
+            <p>Must match details on your ID / passport</p>
+
+            <form action="#" method="POST">
+
+                <!-- Title -->
+                <div>
+                    <label for="title">Title</label>
+                    <select id="title" name="title" required>
+                        <option value="">Select title</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="dr">Dr</option>
+                    </select>
+                </div>
+
+                <!-- Name -->
+                <div>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+
+                <!-- Date of Birth -->
+                <div>
+                    <label>Date of birth</label>
+                    <select name="dob-day" required>
+                        <option value="">Day</option>
+                        <!-- Add 1–31 -->
+                    </select>
+                    <select name="dob-month" required>
+                        <option value="">Month</option>
+                        <!-- Add Jan–Dec -->
+                    </select>
+                    <select name="dob-year" required>
+                        <option value="">Year</option>
+                        <!-- Add dynamic years -->
+                    </select>
+                </div>
+
+                <!-- Nationality -->
+                <div>
+                    <label for="nationality">Nationality</label>
+                    <select id="nationality" name="nationality" required>
+                        <option value="za" selected>South Africa</option>
+                        <!-- Add more options -->
+                    </select>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label for="phone">Phone</label>
+                    <div>
+                        <select name="country-code" required>
+                            <option value="+27">+27</option>
+                            <!-- Add other country codes if needed -->
+                        </select>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <button type="submit">Next</button>
+            </form>
+    </section>
+    <!-- End of Personal details Section - page 1 -->
+
+
+    <!-- Personal details Section - page 2  continued -->
+    <section class="container-size personal-2">
+        <!-- Row 1: Progress Bar -->
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+                <ol class="progress-steps">
+                    <li>
+                        <div>1</div>
+                        <p>Personal details</p>
+                    </li>
+                    <li>
+                        <div>2</div>
+                        <p>Financial information</p>
+                    </li>
+                    <li>
+                        <div>3</div>
+                        <p>Knowledge and experience</p>
+                    </li>
+                    <li>
+                        <div>4</div>
+                        <p>Verification</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Row 2: Form -->
+        <div>
+            <h2>Personal Details</h2>
+            <p>Must match details on your ID / passport</p>
+
+            <form action="#" method="POST">
+
+                <!-- Residence Country -->
+                <div>
+                    <label for="residence-country">Residence country</label>
+                    <select id="residence-country" name="residence-country" required>
+                        <option value="za" selected>South Africa</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+
+                <!-- FATCA Declaration -->
+                <div>
+                    <input type="checkbox" id="fatca" name="fatca" required>
+                    <label for="fatca">I am not a citizen or resident of the United States of America for tax
+                        purposes.</label>
+                </div>
+
+                <!-- Terms and Conditions Agreement -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>,
+                        <a href="#">Complaints Dispute Policy</a>,
+                        <a href="#">FAIS Disclosure</a> and
+                        <a href="#">Risk Disclosure</a>.
+                    </label>
+                </div>
+
+                <button type="submit">Next</button>
+            </form>
+    </section>
+    <!-- End of Personal details Section - page 2 -->
+    <!-- Personal details Section - page 3 continued -->
+    <section class="container-size personal-2">
+        <!-- Row 1: Progress Bar -->
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+                <ol class="progress-steps">
+                    <li>
+                        <div>1</div>
+                        <p>Personal details</p>
+                    </li>
+                    <li>
+                        <div>2</div>
+                        <p>Financial information</p>
+                    </li>
+                    <li>
+                        <div>3</div>
+                        <p>Knowledge and experience</p>
+                    </li>
+                    <li>
+                        <div>4</div>
+                        <p>Verification</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Row 2: Form -->
+        <div>
+            <h2>Personal Details</h2>
+            <p>Must match details on your ID / passport</p>
+
+            <form action="#" method="POST">
+
+                <!-- Residence Country -->
+                <div>
+                    <label for="residence-country">Residence country</label>
+                    <select id="residence-country" name="residence-country" required>
+                        <option value="za" selected>South Africa</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+
+                <!-- FATCA Declaration -->
+                <div>
+                    <input type="checkbox" id="fatca" name="fatca" required>
+                    <label for="fatca">I am not a citizen or resident of the United States of America for tax
+                        purposes.</label>
+                </div>
+
+                <!-- Terms and Conditions Agreement -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>,
+                        <a href="#">Complaints Dispute Policy</a>,
+                        <a href="#">FAIS Disclosure</a> and
+                        <a href="#">Risk Disclosure</a>.
+                    </label>
+                </div>
+
+                <button type="submit">Next</button>
+            </form>
+    </section>
+    <!-- End of Personal details Section - page 3 -->
+     
+    <script src="script.js"></script>
+</body>
+
+</html>
