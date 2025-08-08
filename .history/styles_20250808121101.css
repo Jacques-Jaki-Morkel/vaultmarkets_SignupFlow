@@ -1,0 +1,206 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #c89006;
+    --primary-color-muted: #e0c06e;
+    --secondary-color: #6c757d;
+    --background-color: #050505;
+    --background-color2: #272626;
+    --text-color: #f8f9fa;
+    --link-color: #007bff;
+}
+
+.container-size {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: linear-gradient(to bottom right, var(--background-color), var(--background-color2));
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 80px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav-bar li {
+    list-style: none;
+}
+
+/* all text color */
+.gradient-text {
+    background: linear-gradient(to bottom right, var(--primary-color), var(--primary-color-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+label,
+li {
+    color: var(--text-color);
+}
+
+/* bullet points styling */
+ul li::marker,
+ol li::marker {
+    color: var(--primary-color);
+    /* bullet only */
+}
+
+
+/* start of sigh up flow styling here */
+
+/* page #1 in sign up flow */
+.openAccount-1
+
+/* Signup open account start */
+    {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.openAccount-1 .col-1 {
+    width: 50vw;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: Start;
+    justify-content: space-between;
+    padding: 15px;
+    height: 250px;
+}
+
+.openAccount-1 .col-1 ul {
+    margin-left: 25px;
+}
+
+.openAccount-1 .col-2 {
+    position: relative;
+    padding: 60px 50px;
+    max-height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Background color */
+    background-color: rgba(208, 208, 208, 0.05);
+    /* D0D0D0 at 5% */
+
+    /* Border gradient stroke */
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top left, rgba(255, 255, 255, 1), rgba(50, 50, 50, 1)) 1;
+    border-image-slice: 1;
+
+    /* Drop shadow */
+    box-shadow: 0 4px 8px rgba(201, 199, 199, 0.27);
+    /* Converted 1.3 Figma blur to ~8px real blur */
+
+    /* Background blur (like glassmorphism) */
+    backdrop-filter: blur(10px);
+    /* Figma 9.9 ≈ 10px */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+}
+
+.openAccount-1 .col-2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url('/path/to/noise-texture.png');
+    /* Add grainy PNG */
+    opacity: 0.13;
+    /* 13% */
+    mix-blend-mode: overlay;
+}
+
+
+
+.openAccount-1 .col-2 form {
+    display: flex;
+    gap: 20px;
+    /* background: pink; */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Signup open account end */
+
+/* Progress bar styling here */
+.progress-bar-wrapper
+
+/* progress bar */
+    {
+    margin-bottom: 50px;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 150px;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+
+}
+
+.progress-steps {
+    gap: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.progress-steps li {
+    width: 150px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-steps li p {
+    text-align: center;
+}
+
+/* page #2 in sign up flow */
+.personal-2
+
+/* Signup personal details */
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}

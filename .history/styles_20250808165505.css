@@ -191,11 +191,6 @@ select {
     color: var(--text-color);
     font-size: 16px;
 }
-legend {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 10px;
-}
 
 /* start of sigh up flow styling here */
 
@@ -451,7 +446,7 @@ legend {
     width: 100%;
     max-width: 1200px;
     padding: 20px;
-    height: fit-content;
+    height: 60vh;
     display: flex;
     background-color: var(--background-color2);
     border-radius: 8px;
@@ -459,6 +454,6 @@ legend {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     justify-content: flex-start;
-    gap:20px;
+    gap:30px;
     position: relative;
 }

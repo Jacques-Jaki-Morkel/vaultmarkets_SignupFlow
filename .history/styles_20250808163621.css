@@ -158,7 +158,6 @@ input[type="checkbox"]:checked::after {
     justify-content: flex-start;
     flex-direction: row;
 }
-
 button[type="submit"] {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -169,32 +168,15 @@ button[type="submit"] {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
 button[type="submit"]:hover {
     background-color: var(--primary-color-muted);
-    color: var(--circle-text);
+    color: var(--circle-text)
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    background-color: var(--background-color2);
-    color: var(--text-color);
-    font-size: 16px;
-}
-legend {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 10px;
 }
 
 /* start of sigh up flow styling here */
@@ -445,20 +427,4 @@ legend {
     justify-content: center;
     height: 100vh;
     background-color: var(--background-color);
-}
-
-.personal-2 form {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    background-color: var(--background-color2);
-    border-radius: 8px;
-    z-index: 5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    justify-content: flex-start;
-    gap:20px;
-    position: relative;
 }

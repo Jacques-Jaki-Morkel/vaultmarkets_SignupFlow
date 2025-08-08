@@ -12,40 +12,31 @@
     --background-color: #050505;
     --background-color2: #272626;
     --text-color: #f8f9fa;
-    --link-color: #c89006;
-    --link-color-hover: #e0c06e;
-    --link-color-active: #07afd4;
+    --link-color: #007bff;
 }
 
 .container-size {
-    position: relative;
-    /* Needed so the pseudo-element positions inside */
+    position: relative; /* Needed so the pseudo-element positions inside */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background: linear-gradient(to bottom right,
-            var(--background-color),
-            var(--background-color2));
-    z-index: 0;
-    /* Keeps content above the pseudo-element */
+    background: linear-gradient(
+        to bottom right, 
+        var(--background-color), 
+        var(--background-color2)
+    );
+    z-index: 0; /* Keeps content above the pseudo-element */
 }
 
 .container-size::before {
     content: "";
     position: absolute;
-    inset: 0;
-    /* Same as top: 0; right: 0; bottom: 0; left: 0 */
-    top: 22%;
-    left: 60%;
+    inset: 0; /* Same as top: 0; right: 0; bottom: 0; left: 0 */
     background-image: url('/assets/candles-pattern.png');
-    background-repeat: no-repeat;
-    /* Or no-repeat if you want a single image */
-    background-size: auto;
-    /* Change to 'cover' or 'contain' if needed */
-    opacity: 0.5;
-    /* Control transparency of the pattern */
-    pointer-events: none;
-    /* Prevent blocking clicks */
+    background-repeat: repeat; /* Or no-repeat if you want a single image */
+    background-size: auto; /* Change to 'cover' or 'contain' if needed */
+    opacity: 0.3; /* Control transparency of the pattern */
+    pointer-events: none; /* Prevent blocking clicks */
     z-index: 1;
 }
 
@@ -97,105 +88,6 @@ ol li::marker {
     /* bullet only */
 }
 
-/* form styling */
-input {
-    /* width: 100%; */
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    background-color: var(--background-color2);
-    color: var(--text-color);
-    font-size: 16px;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--link-color-hover);
-}
-
-a:active {
-    color: var(--link-color-active);
-}
-
-/* Hide the default checkbox */
-input[type="checkbox"] {
-    appearance: none;
-    /* Removes default checkbox */
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background: var(--background-color);
-    cursor: pointer;
-    position: relative;
-}
-
-/* Checked state */
-input[type="checkbox"]:checked {
-    background-color: var(--primary-color);
-    border-color: var(--secondary-color);
-}
-
-/* Checkmark */
-input[type="checkbox"]:checked::after {
-    content: "✔";
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 3px;
-    font-size: 16px;
-}
-
-.checkboxAlign {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-
-button[type="submit"] {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: var(--primary-color-muted);
-    color: var(--circle-text);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    background-color: var(--background-color2);
-    color: var(--text-color);
-    font-size: 16px;
-}
-legend {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 10px;
-}
 
 /* start of sigh up flow styling here */
 
@@ -210,11 +102,11 @@ legend {
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+   
 }
 
 .openAccount-1 .col-1 {
-    width: 40vw;
+    width: 50vw;
     max-width: 1920px;
     display: flex;
     flex-direction: column;
@@ -307,8 +199,7 @@ legend {
     background: transparent;
     /* we draw the track with pseudo elements */
 
-    width: 80vw;
-    /* set the width of the bar here*/
+    width: 80vw; /* set the width of the bar here*/
 }
 
 /* Track: thin bar (behind everything) */
@@ -337,8 +228,7 @@ legend {
     right: 18px;
     height: 8px;
     top: 50%;
-    transform: translateY(-150%) scaleX(0.25);
-    /* initially hidden */
+    transform: translateY(-150%) scaleX(0.25); /* initially hidden */
     /* scaleX 0..1 controls progress */
     transform-origin: left center;
     transition: transform 360ms cubic-bezier(.22, .9, .3, 1);
@@ -445,20 +335,4 @@ legend {
     justify-content: center;
     height: 100vh;
     background-color: var(--background-color);
-}
-
-.personal-2 form {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    background-color: var(--background-color2);
-    border-radius: 8px;
-    z-index: 5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    justify-content: flex-start;
-    gap:20px;
-    position: relative;
 }

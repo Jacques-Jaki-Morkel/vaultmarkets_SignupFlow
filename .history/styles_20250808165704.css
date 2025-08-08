@@ -192,8 +192,8 @@ select {
     font-size: 16px;
 }
 legend {
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 14px;
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
