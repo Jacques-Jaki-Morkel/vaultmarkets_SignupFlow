@@ -1,3 +1,13 @@
+// This is the form processing logic below
+
+// Signup form processing logic: starts here
+
+    // const form1 = document.querySelector('');
+
+// Signup form processing logic: ends here
+
+//form navigation logic
+// navigation logic starts here
 // grab all forms (assumes each form is wrapped in its own <section>)
 const forms = document.querySelectorAll('form');
 
@@ -28,16 +38,23 @@ showForm(currentFormIndex);
 // listen for form submissions
 forms.forEach((form, i) => {
   form.addEventListener('submit', (e) => {
-    // prevent page reload for all except last form
-    if (i < countForms - 1) {
-      e.preventDefault();
-      if (i === currentFormIndex) {
+    e.preventDefault();
+
+    if (i === currentFormIndex) {
+      if (currentFormIndex < countForms - 1) {
         currentFormIndex++;
         showForm(currentFormIndex);
+      } else {
+        console.log('All steps complete');
       }
-    } else {
-      // last form → allow normal submission or handle final logic
-      console.log('Final form submitted');
     }
+
+
+
+buttons.forEach(button => {
+  button.addEventListener('click', event => {
+    event.preventDefault();
+    // your func logic here
+    console.log('Submit button clicked!');
   });
 });

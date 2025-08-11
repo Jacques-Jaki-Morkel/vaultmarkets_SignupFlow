@@ -17,16 +17,10 @@
     --link-color-active: #07afd4;
 }
 
-/* hide a element */
-.hideThis {
-    display: none !important;
-}
-
-/* signup form styling starts here */
 .container-size {
     position: relative;
     /* Needed so the pseudo-element positions inside */
-    max-width: 100Vw;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     background: linear-gradient(to bottom right,
@@ -67,7 +61,7 @@
 
 .nav-bar {
     width: 100%;
-    max-width: 100vw;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -241,9 +235,8 @@ fieldset label {
     transition: all 0.2s ease;
     width: 40vw;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    text-transform: capitalize; /*  To uppercase the words */
-    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
 }
 
 /* Hover effect */
@@ -253,11 +246,10 @@ fieldset label:hover {
 
 /* When radio is selected, style the label */
 fieldset input[type="radio"]:checked+label {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-muted);
     /* highlight colour */
-    border-color: var(--primary-color);
-    letter-spacing: 0.05em;
-    color: var(--text-color);
+    border-color: var(--link-color-active);
+    color: var(--circle-text);
     font-weight: bold;
     font-weight: 800;
 }
@@ -269,8 +261,6 @@ fieldset input[type="radio"]:focus+label {
 
 
 /* start of sigh up flow styling here */
-
-
 
 /* page #1 in sign up flow */
 

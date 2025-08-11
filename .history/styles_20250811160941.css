@@ -19,7 +19,7 @@
 
 /* hide a element */
 .hideThis {
-    display: none !important;
+    display: none;
 }
 
 /* signup form styling starts here */

@@ -17,16 +17,10 @@
     --link-color-active: #07afd4;
 }
 
-/* hide a element */
-.hideThis {
-    display: none !important;
-}
-
-/* signup form styling starts here */
 .container-size {
     position: relative;
     /* Needed so the pseudo-element positions inside */
-    max-width: 100Vw;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     background: linear-gradient(to bottom right,
@@ -67,7 +61,7 @@
 
 .nav-bar {
     width: 100%;
-    max-width: 100vw;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -233,44 +227,35 @@ fieldset input[type="radio"] {
 fieldset label {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--primary-color-muted);
-    color: var(--circle-text);
+    background-color: var(--primary-color);
+    color: var(--text-color);
     border: 2px solid #000;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
     width: 40vw;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    text-transform: capitalize; /*  To uppercase the words */
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Hover effect */
 fieldset label:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--link-color-active);
 }
 
 /* When radio is selected, style the label */
 fieldset input[type="radio"]:checked+label {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-muted);
     /* highlight colour */
-    border-color: var(--primary-color);
-    letter-spacing: 0.05em;
-    color: var(--text-color);
-    font-weight: bold;
-    font-weight: 800;
+    border-color: #4caf50;
+    color: var(--circle-text);
 }
 
 /* Optional: focus outline when tabbing */
 fieldset input[type="radio"]:focus+label {
-    box-shadow: 0 0 0 3px var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
 }
 
 
 /* start of sigh up flow styling here */
-
-
 
 /* page #1 in sign up flow */
 

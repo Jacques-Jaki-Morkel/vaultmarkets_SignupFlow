@@ -17,12 +17,6 @@
     --link-color-active: #07afd4;
 }
 
-/* hide a element */
-.hideThis {
-    display: none !important;
-}
-
-/* signup form styling starts here */
 .container-size {
     position: relative;
     /* Needed so the pseudo-element positions inside */

@@ -17,16 +17,10 @@
     --link-color-active: #07afd4;
 }
 
-/* hide a element */
-.hideThis {
-    display: none !important;
-}
-
-/* signup form styling starts here */
 .container-size {
     position: relative;
     /* Needed so the pseudo-element positions inside */
-    max-width: 100Vw;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     background: linear-gradient(to bottom right,
@@ -67,7 +61,7 @@
 
 .nav-bar {
     width: 100%;
-    max-width: 100vw;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +73,6 @@
     display: none;
 
 }
-
 .logo img {
     width: 100px;
     padding: 15px;
@@ -203,74 +196,58 @@ select {
     color: var(--text-color);
     font-size: 16px;
 }
-
 legend {
     font-size: 18px;
     color: var(--text-color);
     margin-bottom: 10px;
 }
-
 fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
 }
 
 fieldset div {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Hide the real radio */
 fieldset input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 /* Make label look like a button */
 fieldset label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color-muted);
-    color: var(--circle-text);
-    border: 2px solid #000;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    width: 40vw;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    text-transform: capitalize; /*  To uppercase the words */
-    font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 /* Hover effect */
 fieldset label:hover {
-    background-color: var(--secondary-color);
+  background-color: #ddd;
 }
 
 /* When radio is selected, style the label */
-fieldset input[type="radio"]:checked+label {
-    background-color: var(--secondary-color);
-    /* highlight colour */
-    border-color: var(--primary-color);
-    letter-spacing: 0.05em;
-    color: var(--text-color);
-    font-weight: bold;
-    font-weight: 800;
+fieldset input[type="radio"]:checked + label {
+  background-color: #4caf50; /* highlight colour */
+  border-color: #4caf50;
+  color: #fff;
 }
 
 /* Optional: focus outline when tabbing */
-fieldset input[type="radio"]:focus+label {
-    box-shadow: 0 0 0 3px var(--primary-color);
+fieldset input[type="radio"]:focus + label {
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
 }
 
 
 /* start of sigh up flow styling here */
-
-
 
 /* page #1 in sign up flow */
 
@@ -532,6 +509,6 @@ fieldset input[type="radio"]:focus+label {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap:20px;
     position: relative;
 }
